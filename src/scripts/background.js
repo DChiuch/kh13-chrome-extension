@@ -9,11 +9,11 @@ KH13.newsInterval = 10 * 60 * 1000; // 10 minutes
 KH13.dateCutoff   = new Date("01 Apr 2014");
 
 // Handle clicks to the browser action button
-/*chrome.browserAction.onClicked.addListener(function (tab) {
+chrome.browserAction.onClicked.addListener(function (tab) {
     chrome.tabs.create({
         url: KH13.homepageURL
     });
-});*/
+});
 
 // Adapted from http://stackoverflow.com/a/9609450
 var decodeEntities = (function() {
